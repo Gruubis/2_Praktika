@@ -28,19 +28,23 @@ namespace WindowsFormsApp1
                 {
                     UserWindow uw = new UserWindow();
                     uw.ShowDialog();
-                    Close();
+                    textBox1.Clear();
+                    textBox2.Clear();
+                   
                 }
                 else if(WindowsFormsApp1.repositories.UsersRepository.LoggedInUser.getType() == "teacher")
                 {
                     TeacherWindow tw = new TeacherWindow();
                     tw.ShowDialog();
-                    Close();
+                    textBox1.Clear();
+                    textBox2.Clear();
                 }
                 else
                 {
                     AdminWindow aw = new AdminWindow();
                     aw.ShowDialog();
-                    Close();
+                    textBox1.Clear();
+                    textBox2.Clear();
                 }
              
             }
@@ -53,6 +57,11 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
