@@ -46,17 +46,128 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="addGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="addGroup.Designer.cs">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTeacher.Designer.cs">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminWindow.Designer.cs">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs" />
+    <Compile Include="Grouplist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grouplist.Designer.cs">
+      <DependentUpon>Grouplist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudenttoGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudenttoGroup.Designer.cs">
+      <DependentUpon>StudenttoGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs" />
+    <Compile Include="TeacherWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherWindow.Designer.cs">
+      <DependentUpon>TeacherWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudent.Designer.cs">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grade.cs" />
+    <Compile Include="LoginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\UsersRepository.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentlist1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Studentlist1.Designer.cs">
+      <DependentUpon>Studentlist1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubjectList.Designer.cs">
+      <DependentUpon>SubjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherList.Designer.cs">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="SubjectToGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubjectToGroup.Designer.cs">
+      <DependentUpon>SubjectToGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWindow.Designer.cs">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addGroup.resx">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTeacher.resx">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminWindow.resx">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherWindow.resx">
+      <DependentUpon>TeacherWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudent.resx">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grouplist.resx">
+      <DependentUpon>Grouplist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -66,6 +177,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentlist1.resx">
+      <DependentUpon>Studentlist1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudenttoGroup.resx">
+      <DependentUpon>StudenttoGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectList.resx">
+      <DependentUpon>SubjectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherList.resx">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectToGroup.resx">
+      <DependentUpon>SubjectToGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWindow.resx">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

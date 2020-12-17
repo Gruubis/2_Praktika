@@ -6,16 +6,46 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class Student : User
+    class Student
     {
+        private int Id;
         private string Name;
         private string Surname;
         private string Group;
+        private int subject_id;
 
-        public Student(string username, string password, string name, string surname) : base(username, password)
+        public Student(int id, string name, string surname, string group, int Subject_id)
         {
-
+            Id = id;
+            Name = name;
+            Surname = surname;
+            Group = group;
+            subject_id = Subject_id;
         }
-
+        public int getId()
+        {
+            return Id;
+        }
+        public string getName()
+        {
+            return Name;
+        }
+        public string getSurname()
+        {
+            return Surname;
+        }
+        public string getGroup()
+        {
+            return Group;
+        }
+        public void setSubjectId(int id)
+        {
+            subject_id = id;
+        }
+        public int getSubjectId()
+        {
+            return subject_id;
+        }
+        
     }
 }
